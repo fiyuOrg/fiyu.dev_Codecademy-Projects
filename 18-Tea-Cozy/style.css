@@ -1,0 +1,157 @@
+* {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black; 
+    opacity: 0.9; 
+    text-align: center;
+    /* This made the difference. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.nav{
+    /* background-color:;
+    padding: 5px 20px;*/
+    display: flex;
+    align-items: center;
+
+    height: 69px;
+    border-bottom: 1px solid seashell;
+}
+
+ul{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.container0{
+    position: relative;
+    background-image: url("images/img-mission-background.jpeg");
+    width: 1200px;
+    height: 700px;
+    margin: auto; /* This easily centered the div.*/
+}
+
+.container0Text{
+    opacity: 1;
+    align-items: center;
+    width: 1200px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container0Text h2, .container0Text h4{
+    padding: 10px;
+}
+
+.container1{
+    width: 1000px;
+    margin: 75px auto auto auto;
+}
+
+p.container1{
+    padding: 10px 10px 10px 10px;
+}
+
+.container1Title{
+    margin: auto;
+} 
+
+#container1TitleParagraph {
+    margin: 15px auto 15px auto;
+}
+
+.upperContainer1{
+    display: flex;
+    justify-content: space-between;
+}  
+
+.lowerContainer1 {
+    margin: 20px auto auto auto;
+}
+
+.lowerContainer1 .c1-image-text{
+    display: inline-block;
+    margin-right: 25px;
+    margin-left: 25px;
+} 
+
+.container1Imgs {
+    width: 300px;
+    height: 200px;
+}
+
+
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    height: 500px;
+    background-image: url("images/img-locations-background.jpeg");
+    margin: 75px auto auto auto;
+}
+
+/* This is how you use decendent of a class with element selector. */ .container2 h2 { 
+    position: absolute;
+    padding: 0 0 340px 0;
+    background: transparent;
+}
+
+.textboxSide, .textboxCenter {
+    align-items: stretch;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+} 
+
+.textboxSide{
+    margin: auto 40px auto 40px; /* I don't have to divide sides because there is already additional margins left for boxes to move. So additional 40px margin to right of the right box doesn't matter.*/
+}
+
+.textboxCenter h3, .textboxSide h3 {
+    margin: 23px auto auto auto;
+}
+
+.textboxSide p, .textboxCenter p{
+    margin: 54px auto 27px auto;
+}
+
+.container3{
+    height: 200px;
+}
+
+.container3 h2{
+    margin: 10px auto auto auto;
+}
+
+.container3 h5{
+    margin: 40px auto auto auto;
+}
+
+.container3 p{
+    margin: 40px auto auto auto;
+}
+
+/* Element's decendant work as well.*/ footer p {
+    float: left;
+    margin: 20px auto 20px 20px;
+}
+
