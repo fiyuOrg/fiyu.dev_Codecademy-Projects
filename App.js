@@ -1,6 +1,4 @@
 const team = {
-  //1st order object.
-  //Project said it should have been an array of objects. Not nested objects.
   _players: [
     { firstName: "", lastName: "", age: 0 },
     { firstName: "", lastName: "", age: 0 },
@@ -24,7 +22,7 @@ const team = {
       lastName: newLastName,
       age: newAge
     };
-    //Why is this "players", rather than _players?
+    //Why is this "players", rather than _players? I decided to make this one as "_players."
     this._players.push(player);
   },
   addGame(newOpponent, newTeamPoints, newOpponentPoints) {
