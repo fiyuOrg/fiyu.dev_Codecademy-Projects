@@ -25,14 +25,20 @@ const team = {
       age: newAge
     };
     //Why is this "players", rather than _players?
-    this.players.push(player);
+    this._players.push(player);
+  },
+  addGame(newOpponent, newTeamPoints, newOpponentPoints) {
+    let game = {
+      opponent: newOpponent,
+      teamPoints: newTeamPoints,
+      opponentPoints: newOpponentPoints
+    };
+    this.games.push(game);
   }
 };
 
 team.addPlayer('Bugs', 'Bunny', 76);
+team.addGame('Titans', 100, 98);
 
 console.log(team._players);
-
-console.log(team.players);
-
-console.log("hello");
+console.log(team._games);
