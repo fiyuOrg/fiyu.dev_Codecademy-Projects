@@ -1,0 +1,11 @@
+.navigation {
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+}
+
+.navigationMenu li{
+    display: inline-block;
+    padding: 5px;
+} 
